@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.325s</div>
+<div class="counter">2.194s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,8 +78,8 @@
 </tr>
 </thead>
 <tr>
-<td class="success">재고감소()</td>
-<td class="success">0.325s</td>
+<td class="success">동시에_100개의_요청()</td>
+<td class="success">2.194s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,21 +87,21 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>21:32:19.713 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-21:32:19.722 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-21:32:19.745 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.stock.service.StockServiceTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-21:32:19.756 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.stock.service.StockServiceTest], using SpringBootContextLoader
-21:32:19.759 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.stock.service.StockServiceTest]: class path resource [com/example/stock/service/StockServiceTest-context.xml] does not exist
-21:32:19.759 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.stock.service.StockServiceTest]: class path resource [com/example/stock/service/StockServiceTestContext.groovy] does not exist
-21:32:19.760 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.stock.service.StockServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-21:32:19.761 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.stock.service.StockServiceTest]: StockServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-21:32:19.797 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.stock.service.StockServiceTest]
-21:32:19.847 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/hayoung/Documents/stock/build/classes/java/main/com/example/stock/StockApplication.class]
-21:32:19.848 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.stock.StockApplication for test class com.example.stock.service.StockServiceTest
-21:32:19.925 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.stock.service.StockServiceTest]: using defaults.
-21:32:19.925 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-21:32:19.953 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1fc793c2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2575f671, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@329a1243, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@ecf9fb3, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2d35442b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@27f9e982, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4593ff34, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@37d3d232, org.springframework.test.context.event.EventPublishingTestExecutionListener@30c0ccff, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@581d969c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@22db8f4, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2b46a8c1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1d572e62, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@29caf222, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@46cf05f7]
-21:32:19.955 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@3c291aad testClass = StockServiceTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2d0566ba testClass = StockServiceTest, locations = '{}', classes = '{class com.example.stock.StockApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@4044fb95, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@16746061, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5c8eee0f, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@56a4479a, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@183e8023, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@79defdc], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+<pre>19:19:40.870 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+19:19:40.881 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+19:19:40.906 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.stock.service.StockServiceTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+19:19:40.916 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.stock.service.StockServiceTest], using SpringBootContextLoader
+19:19:40.919 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.stock.service.StockServiceTest]: class path resource [com/example/stock/service/StockServiceTest-context.xml] does not exist
+19:19:40.920 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.stock.service.StockServiceTest]: class path resource [com/example/stock/service/StockServiceTestContext.groovy] does not exist
+19:19:40.920 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.stock.service.StockServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:19:40.921 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.stock.service.StockServiceTest]: StockServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:19:40.961 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.stock.service.StockServiceTest]
+19:19:41.026 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/hayoung/Documents/stock/build/classes/java/main/com/example/stock/StockApplication.class]
+19:19:41.027 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.stock.StockApplication for test class com.example.stock.service.StockServiceTest
+19:19:41.120 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.stock.service.StockServiceTest]: using defaults.
+19:19:41.121 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+19:19:41.148 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@503d56b5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@72bca894, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@433ffad1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1fc793c2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2575f671, org.springframework.test.context.support.DirtiesContextTestExecutionListener@329a1243, org.springframework.test.context.transaction.TransactionalTestExecutionListener@ecf9fb3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2d35442b, org.springframework.test.context.event.EventPublishingTestExecutionListener@27f9e982, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4593ff34, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@37d3d232, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@30c0ccff, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@581d969c, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@22db8f4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2b46a8c1]
+19:19:41.150 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@6e0ff644 testClass = StockServiceTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@58dea0a5 testClass = StockServiceTest, locations = '{}', classes = '{class com.example.stock.StockApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@4044fb95, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@16746061, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5c8eee0f, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@56a4479a, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@183e8023, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@79defdc], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -111,44 +111,1136 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::               (v2.7.14)
 
-2023-08-16 21:32:20.415  INFO 17837 --- [    Test worker] c.e.stock.service.StockServiceTest       : Starting StockServiceTest using Java 11.0.11 on HAYOUNGui-MacBookPro.local with PID 17837 (started by hayoung in /Users/hayoung/Documents/stock)
-2023-08-16 21:32:20.416  INFO 17837 --- [    Test worker] c.e.stock.service.StockServiceTest       : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2023-08-16 21:32:20.919  INFO 17837 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-08-16 21:32:20.964  INFO 17837 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
-2023-08-16 21:32:21.393  INFO 17837 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-08-16 21:32:21.443  INFO 17837 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
-2023-08-16 21:32:21.590  INFO 17837 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-08-16 21:32:21.692  INFO 17837 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-08-16 21:32:22.043  INFO 17837 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-08-16 21:32:22.076  INFO 17837 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-08-16 21:32:22.594 DEBUG 17837 --- [    Test worker] org.hibernate.SQL                        : drop table if exists stock
+2023-08-22 19:19:41.612  INFO 2930 --- [    Test worker] c.e.stock.service.StockServiceTest       : Starting StockServiceTest using Java 11.0.11 on HAYOUNGui-MacBookPro.local with PID 2930 (started by hayoung in /Users/hayoung/Documents/stock)
+2023-08-22 19:19:41.613  INFO 2930 --- [    Test worker] c.e.stock.service.StockServiceTest       : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-08-22 19:19:42.104  INFO 2930 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-22 19:19:42.156  INFO 2930 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2023-08-22 19:19:42.579  INFO 2930 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-22 19:19:42.630  INFO 2930 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-08-22 19:19:42.781  INFO 2930 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-08-22 19:19:42.879  INFO 2930 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-22 19:19:43.225  INFO 2930 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-22 19:19:43.254  INFO 2930 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-08-22 19:19:43.783 DEBUG 2930 --- [    Test worker] org.hibernate.SQL                        : drop table if exists stock
 Hibernate: drop table if exists stock
-2023-08-16 21:32:22.619 DEBUG 17837 --- [    Test worker] org.hibernate.SQL                        : create table stock (id bigint not null auto_increment, produce_id bigint, quantity bigint, primary key (id)) engine=InnoDB
+2023-08-22 19:19:43.808 DEBUG 2930 --- [    Test worker] org.hibernate.SQL                        : create table stock (id bigint not null auto_increment, produce_id bigint, quantity bigint, primary key (id)) engine=InnoDB
 Hibernate: create table stock (id bigint not null auto_increment, produce_id bigint, quantity bigint, primary key (id)) engine=InnoDB
-2023-08-16 21:32:22.639  INFO 17837 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-08-16 21:32:22.648  INFO 17837 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-08-16 21:32:23.055  WARN 17837 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-08-16 21:32:23.510  INFO 17837 --- [    Test worker] c.e.stock.service.StockServiceTest       : Started StockServiceTest in 3.521 seconds (JVM running for 4.491)
-2023-08-16 21:32:23.635 DEBUG 17837 --- [    Test worker] org.hibernate.SQL                        : insert into stock (produce_id, quantity) values (?, ?)
+2023-08-22 19:19:43.827  INFO 2930 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-22 19:19:43.837  INFO 2930 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-22 19:19:44.229  WARN 2930 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-22 19:19:44.655  INFO 2930 --- [    Test worker] c.e.stock.service.StockServiceTest       : Started StockServiceTest in 3.467 seconds (JVM running for 4.473)
+2023-08-22 19:19:44.781 DEBUG 2930 --- [    Test worker] org.hibernate.SQL                        : insert into stock (produce_id, quantity) values (?, ?)
 Hibernate: insert into stock (produce_id, quantity) values (?, ?)
-2023-08-16 21:32:23.644 TRACE 17837 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
-2023-08-16 21:32:23.644 TRACE 17837 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [100]
-2023-08-16 21:32:23.691 DEBUG 17837 --- [    Test worker] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:44.790 TRACE 2930 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:44.790 TRACE 2930 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [100]
+2023-08-22 19:19:44.833 DEBUG 2930 --- [pool-1-thread-1] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
 Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
-2023-08-16 21:32:23.692 TRACE 17837 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
-2023-08-16 21:32:23.707 DEBUG 17837 --- [    Test worker] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:44.834 TRACE 2930 --- [pool-1-thread-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:44.857 DEBUG 2930 --- [pool-1-thread-1] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:44.858 TRACE 2930 --- [pool-1-thread-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:44.865 DEBUG 2930 --- [pool-1-thread-1] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
 Hibernate: update stock set produce_id=?, quantity=? where id=?
-2023-08-16 21:32:23.708 TRACE 17837 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
-2023-08-16 21:32:23.708 TRACE 17837 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [99]
-2023-08-16 21:32:23.708 TRACE 17837 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
-2023-08-16 21:32:23.718 DEBUG 17837 --- [    Test worker] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:44.866 TRACE 2930 --- [pool-1-thread-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:44.866 TRACE 2930 --- [pool-1-thread-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [99]
+2023-08-22 19:19:44.866 TRACE 2930 --- [pool-1-thread-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:44.876 DEBUG 2930 --- [ool-1-thread-32] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
 Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
-2023-08-16 21:32:23.719 TRACE 17837 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
-2023-08-16 21:32:23.833 DEBUG 17837 --- [    Test worker] org.hibernate.SQL                        : select stock0_.id as id1_0_, stock0_.produce_id as produce_2_0_, stock0_.quantity as quantity3_0_ from stock stock0_
+2023-08-22 19:19:44.876 TRACE 2930 --- [ool-1-thread-32] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:44.882 DEBUG 2930 --- [ool-1-thread-32] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:44.883 TRACE 2930 --- [ool-1-thread-32] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:44.885 DEBUG 2930 --- [ool-1-thread-32] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:44.885 TRACE 2930 --- [ool-1-thread-32] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:44.885 TRACE 2930 --- [ool-1-thread-32] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [98]
+2023-08-22 19:19:44.885 TRACE 2930 --- [ool-1-thread-32] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:44.894 DEBUG 2930 --- [ool-1-thread-31] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:44.895 TRACE 2930 --- [ool-1-thread-31] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:44.902 DEBUG 2930 --- [ool-1-thread-31] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:44.902 TRACE 2930 --- [ool-1-thread-31] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:44.904 DEBUG 2930 --- [ool-1-thread-31] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:44.905 TRACE 2930 --- [ool-1-thread-31] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:44.905 TRACE 2930 --- [ool-1-thread-31] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [97]
+2023-08-22 19:19:44.905 TRACE 2930 --- [ool-1-thread-31] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:44.914 DEBUG 2930 --- [ool-1-thread-31] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:44.915 TRACE 2930 --- [ool-1-thread-31] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:44.921 DEBUG 2930 --- [ool-1-thread-31] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:44.921 TRACE 2930 --- [ool-1-thread-31] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:44.924 DEBUG 2930 --- [ool-1-thread-31] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:44.924 TRACE 2930 --- [ool-1-thread-31] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:44.924 TRACE 2930 --- [ool-1-thread-31] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [96]
+2023-08-22 19:19:44.924 TRACE 2930 --- [ool-1-thread-31] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:44.933 DEBUG 2930 --- [ool-1-thread-30] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:44.933 TRACE 2930 --- [ool-1-thread-30] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:44.939 DEBUG 2930 --- [ool-1-thread-30] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:44.940 TRACE 2930 --- [ool-1-thread-30] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:44.942 DEBUG 2930 --- [ool-1-thread-30] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:44.942 TRACE 2930 --- [ool-1-thread-30] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:44.942 TRACE 2930 --- [ool-1-thread-30] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [95]
+2023-08-22 19:19:44.942 TRACE 2930 --- [ool-1-thread-30] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:44.951 DEBUG 2930 --- [ool-1-thread-29] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:44.952 TRACE 2930 --- [ool-1-thread-29] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:44.958 DEBUG 2930 --- [ool-1-thread-29] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:44.959 TRACE 2930 --- [ool-1-thread-29] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:44.961 DEBUG 2930 --- [ool-1-thread-29] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:44.961 TRACE 2930 --- [ool-1-thread-29] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:44.961 TRACE 2930 --- [ool-1-thread-29] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [94]
+2023-08-22 19:19:44.962 TRACE 2930 --- [ool-1-thread-29] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:44.971 DEBUG 2930 --- [ool-1-thread-28] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:44.972 TRACE 2930 --- [ool-1-thread-28] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:44.979 DEBUG 2930 --- [ool-1-thread-28] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:44.980 TRACE 2930 --- [ool-1-thread-28] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:44.982 DEBUG 2930 --- [ool-1-thread-28] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:44.983 TRACE 2930 --- [ool-1-thread-28] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:44.983 TRACE 2930 --- [ool-1-thread-28] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [93]
+2023-08-22 19:19:44.983 TRACE 2930 --- [ool-1-thread-28] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:44.995 DEBUG 2930 --- [ool-1-thread-27] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:44.995 TRACE 2930 --- [ool-1-thread-27] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.004 DEBUG 2930 --- [ool-1-thread-27] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.004 TRACE 2930 --- [ool-1-thread-27] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.007 DEBUG 2930 --- [ool-1-thread-27] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.007 TRACE 2930 --- [ool-1-thread-27] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.007 TRACE 2930 --- [ool-1-thread-27] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [92]
+2023-08-22 19:19:45.007 TRACE 2930 --- [ool-1-thread-27] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.017 DEBUG 2930 --- [ool-1-thread-26] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.018 TRACE 2930 --- [ool-1-thread-26] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.024 DEBUG 2930 --- [ool-1-thread-26] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.024 TRACE 2930 --- [ool-1-thread-26] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.027 DEBUG 2930 --- [ool-1-thread-26] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.027 TRACE 2930 --- [ool-1-thread-26] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.027 TRACE 2930 --- [ool-1-thread-26] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [91]
+2023-08-22 19:19:45.027 TRACE 2930 --- [ool-1-thread-26] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.037 DEBUG 2930 --- [ool-1-thread-25] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.037 TRACE 2930 --- [ool-1-thread-25] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.044 DEBUG 2930 --- [ool-1-thread-25] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.044 TRACE 2930 --- [ool-1-thread-25] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.046 DEBUG 2930 --- [ool-1-thread-25] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.047 TRACE 2930 --- [ool-1-thread-25] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.047 TRACE 2930 --- [ool-1-thread-25] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [90]
+2023-08-22 19:19:45.047 TRACE 2930 --- [ool-1-thread-25] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.055 DEBUG 2930 --- [ool-1-thread-24] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.055 TRACE 2930 --- [ool-1-thread-24] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.061 DEBUG 2930 --- [ool-1-thread-24] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.061 TRACE 2930 --- [ool-1-thread-24] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.063 DEBUG 2930 --- [ool-1-thread-24] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.064 TRACE 2930 --- [ool-1-thread-24] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.064 TRACE 2930 --- [ool-1-thread-24] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [89]
+2023-08-22 19:19:45.064 TRACE 2930 --- [ool-1-thread-24] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.072 DEBUG 2930 --- [ool-1-thread-23] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.072 TRACE 2930 --- [ool-1-thread-23] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.079 DEBUG 2930 --- [ool-1-thread-23] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.079 TRACE 2930 --- [ool-1-thread-23] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.081 DEBUG 2930 --- [ool-1-thread-23] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.082 TRACE 2930 --- [ool-1-thread-23] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.082 TRACE 2930 --- [ool-1-thread-23] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [88]
+2023-08-22 19:19:45.082 TRACE 2930 --- [ool-1-thread-23] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.091 DEBUG 2930 --- [ool-1-thread-22] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.092 TRACE 2930 --- [ool-1-thread-22] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.098 DEBUG 2930 --- [ool-1-thread-22] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.098 TRACE 2930 --- [ool-1-thread-22] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.100 DEBUG 2930 --- [ool-1-thread-22] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.100 TRACE 2930 --- [ool-1-thread-22] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.101 TRACE 2930 --- [ool-1-thread-22] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [87]
+2023-08-22 19:19:45.101 TRACE 2930 --- [ool-1-thread-22] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.109 DEBUG 2930 --- [ool-1-thread-21] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.110 TRACE 2930 --- [ool-1-thread-21] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.116 DEBUG 2930 --- [ool-1-thread-21] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.116 TRACE 2930 --- [ool-1-thread-21] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.118 DEBUG 2930 --- [ool-1-thread-21] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.118 TRACE 2930 --- [ool-1-thread-21] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.118 TRACE 2930 --- [ool-1-thread-21] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [86]
+2023-08-22 19:19:45.118 TRACE 2930 --- [ool-1-thread-21] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.127 DEBUG 2930 --- [ool-1-thread-20] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.127 TRACE 2930 --- [ool-1-thread-20] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.134 DEBUG 2930 --- [ool-1-thread-20] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.134 TRACE 2930 --- [ool-1-thread-20] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.136 DEBUG 2930 --- [ool-1-thread-20] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.137 TRACE 2930 --- [ool-1-thread-20] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.137 TRACE 2930 --- [ool-1-thread-20] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [85]
+2023-08-22 19:19:45.137 TRACE 2930 --- [ool-1-thread-20] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.148 DEBUG 2930 --- [ool-1-thread-19] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.148 TRACE 2930 --- [ool-1-thread-19] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.156 DEBUG 2930 --- [ool-1-thread-19] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.156 TRACE 2930 --- [ool-1-thread-19] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.158 DEBUG 2930 --- [ool-1-thread-19] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.159 TRACE 2930 --- [ool-1-thread-19] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.159 TRACE 2930 --- [ool-1-thread-19] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [84]
+2023-08-22 19:19:45.159 TRACE 2930 --- [ool-1-thread-19] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.167 DEBUG 2930 --- [ool-1-thread-18] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.168 TRACE 2930 --- [ool-1-thread-18] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.174 DEBUG 2930 --- [ool-1-thread-18] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.175 TRACE 2930 --- [ool-1-thread-18] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.177 DEBUG 2930 --- [ool-1-thread-18] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.177 TRACE 2930 --- [ool-1-thread-18] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.177 TRACE 2930 --- [ool-1-thread-18] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [83]
+2023-08-22 19:19:45.178 TRACE 2930 --- [ool-1-thread-18] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.187 DEBUG 2930 --- [ool-1-thread-17] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.188 TRACE 2930 --- [ool-1-thread-17] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.195 DEBUG 2930 --- [ool-1-thread-17] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.195 TRACE 2930 --- [ool-1-thread-17] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.197 DEBUG 2930 --- [ool-1-thread-17] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.198 TRACE 2930 --- [ool-1-thread-17] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.198 TRACE 2930 --- [ool-1-thread-17] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [82]
+2023-08-22 19:19:45.198 TRACE 2930 --- [ool-1-thread-17] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.208 DEBUG 2930 --- [ool-1-thread-16] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.208 TRACE 2930 --- [ool-1-thread-16] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.216 DEBUG 2930 --- [ool-1-thread-16] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.216 TRACE 2930 --- [ool-1-thread-16] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.219 DEBUG 2930 --- [ool-1-thread-16] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.219 TRACE 2930 --- [ool-1-thread-16] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.219 TRACE 2930 --- [ool-1-thread-16] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [81]
+2023-08-22 19:19:45.219 TRACE 2930 --- [ool-1-thread-16] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.252 DEBUG 2930 --- [ool-1-thread-15] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.252 TRACE 2930 --- [ool-1-thread-15] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.262 DEBUG 2930 --- [ool-1-thread-15] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.262 TRACE 2930 --- [ool-1-thread-15] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.265 DEBUG 2930 --- [ool-1-thread-15] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.265 TRACE 2930 --- [ool-1-thread-15] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.265 TRACE 2930 --- [ool-1-thread-15] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [80]
+2023-08-22 19:19:45.265 TRACE 2930 --- [ool-1-thread-15] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.275 DEBUG 2930 --- [ool-1-thread-14] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.276 TRACE 2930 --- [ool-1-thread-14] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.283 DEBUG 2930 --- [ool-1-thread-14] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.283 TRACE 2930 --- [ool-1-thread-14] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.285 DEBUG 2930 --- [ool-1-thread-14] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.286 TRACE 2930 --- [ool-1-thread-14] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.286 TRACE 2930 --- [ool-1-thread-14] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [79]
+2023-08-22 19:19:45.286 TRACE 2930 --- [ool-1-thread-14] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.297 DEBUG 2930 --- [ool-1-thread-13] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.297 TRACE 2930 --- [ool-1-thread-13] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.305 DEBUG 2930 --- [ool-1-thread-13] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.305 TRACE 2930 --- [ool-1-thread-13] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.307 DEBUG 2930 --- [ool-1-thread-13] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.308 TRACE 2930 --- [ool-1-thread-13] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.308 TRACE 2930 --- [ool-1-thread-13] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [78]
+2023-08-22 19:19:45.308 TRACE 2930 --- [ool-1-thread-13] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.318 DEBUG 2930 --- [ool-1-thread-12] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.319 TRACE 2930 --- [ool-1-thread-12] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.324 DEBUG 2930 --- [ool-1-thread-12] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.325 TRACE 2930 --- [ool-1-thread-12] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.327 DEBUG 2930 --- [ool-1-thread-12] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.328 TRACE 2930 --- [ool-1-thread-12] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.328 TRACE 2930 --- [ool-1-thread-12] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [77]
+2023-08-22 19:19:45.328 TRACE 2930 --- [ool-1-thread-12] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.336 DEBUG 2930 --- [ool-1-thread-11] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.336 TRACE 2930 --- [ool-1-thread-11] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.343 DEBUG 2930 --- [ool-1-thread-11] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.344 TRACE 2930 --- [ool-1-thread-11] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.346 DEBUG 2930 --- [ool-1-thread-11] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.346 TRACE 2930 --- [ool-1-thread-11] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.346 TRACE 2930 --- [ool-1-thread-11] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [76]
+2023-08-22 19:19:45.347 TRACE 2930 --- [ool-1-thread-11] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.358 DEBUG 2930 --- [ool-1-thread-11] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.359 TRACE 2930 --- [ool-1-thread-11] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.375 DEBUG 2930 --- [ool-1-thread-11] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.376 TRACE 2930 --- [ool-1-thread-11] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.379 DEBUG 2930 --- [ool-1-thread-11] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.379 TRACE 2930 --- [ool-1-thread-11] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.379 TRACE 2930 --- [ool-1-thread-11] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [75]
+2023-08-22 19:19:45.379 TRACE 2930 --- [ool-1-thread-11] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.392 DEBUG 2930 --- [ool-1-thread-10] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.392 TRACE 2930 --- [ool-1-thread-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.401 DEBUG 2930 --- [ool-1-thread-10] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.402 TRACE 2930 --- [ool-1-thread-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.404 DEBUG 2930 --- [ool-1-thread-10] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.405 TRACE 2930 --- [ool-1-thread-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.405 TRACE 2930 --- [ool-1-thread-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [74]
+2023-08-22 19:19:45.405 TRACE 2930 --- [ool-1-thread-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.418 DEBUG 2930 --- [pool-1-thread-9] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.418 TRACE 2930 --- [pool-1-thread-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.426 DEBUG 2930 --- [pool-1-thread-9] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.427 TRACE 2930 --- [pool-1-thread-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.429 DEBUG 2930 --- [pool-1-thread-9] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.429 TRACE 2930 --- [pool-1-thread-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.430 TRACE 2930 --- [pool-1-thread-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [73]
+2023-08-22 19:19:45.430 TRACE 2930 --- [pool-1-thread-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.442 DEBUG 2930 --- [pool-1-thread-8] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.442 TRACE 2930 --- [pool-1-thread-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.451 DEBUG 2930 --- [pool-1-thread-8] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.451 TRACE 2930 --- [pool-1-thread-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.454 DEBUG 2930 --- [pool-1-thread-8] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.454 TRACE 2930 --- [pool-1-thread-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.455 TRACE 2930 --- [pool-1-thread-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [72]
+2023-08-22 19:19:45.455 TRACE 2930 --- [pool-1-thread-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.467 DEBUG 2930 --- [pool-1-thread-7] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.467 TRACE 2930 --- [pool-1-thread-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.475 DEBUG 2930 --- [pool-1-thread-7] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.476 TRACE 2930 --- [pool-1-thread-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.478 DEBUG 2930 --- [pool-1-thread-7] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.478 TRACE 2930 --- [pool-1-thread-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.478 TRACE 2930 --- [pool-1-thread-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [71]
+2023-08-22 19:19:45.479 TRACE 2930 --- [pool-1-thread-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.491 DEBUG 2930 --- [pool-1-thread-6] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.491 TRACE 2930 --- [pool-1-thread-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.499 DEBUG 2930 --- [pool-1-thread-6] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.500 TRACE 2930 --- [pool-1-thread-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.501 DEBUG 2930 --- [pool-1-thread-6] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.502 TRACE 2930 --- [pool-1-thread-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.502 TRACE 2930 --- [pool-1-thread-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [70]
+2023-08-22 19:19:45.502 TRACE 2930 --- [pool-1-thread-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.510 DEBUG 2930 --- [pool-1-thread-5] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.510 TRACE 2930 --- [pool-1-thread-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.516 DEBUG 2930 --- [pool-1-thread-5] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.517 TRACE 2930 --- [pool-1-thread-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.519 DEBUG 2930 --- [pool-1-thread-5] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.519 TRACE 2930 --- [pool-1-thread-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.519 TRACE 2930 --- [pool-1-thread-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [69]
+2023-08-22 19:19:45.519 TRACE 2930 --- [pool-1-thread-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.527 DEBUG 2930 --- [pool-1-thread-4] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.528 TRACE 2930 --- [pool-1-thread-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.533 DEBUG 2930 --- [pool-1-thread-4] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.534 TRACE 2930 --- [pool-1-thread-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.536 DEBUG 2930 --- [pool-1-thread-4] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.536 TRACE 2930 --- [pool-1-thread-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.536 TRACE 2930 --- [pool-1-thread-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [68]
+2023-08-22 19:19:45.536 TRACE 2930 --- [pool-1-thread-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.544 DEBUG 2930 --- [pool-1-thread-3] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.544 TRACE 2930 --- [pool-1-thread-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.550 DEBUG 2930 --- [pool-1-thread-3] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.550 TRACE 2930 --- [pool-1-thread-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.552 DEBUG 2930 --- [pool-1-thread-3] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.552 TRACE 2930 --- [pool-1-thread-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.552 TRACE 2930 --- [pool-1-thread-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [67]
+2023-08-22 19:19:45.552 TRACE 2930 --- [pool-1-thread-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.560 DEBUG 2930 --- [pool-1-thread-2] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.561 TRACE 2930 --- [pool-1-thread-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.567 DEBUG 2930 --- [pool-1-thread-2] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.567 TRACE 2930 --- [pool-1-thread-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.570 DEBUG 2930 --- [pool-1-thread-2] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.570 TRACE 2930 --- [pool-1-thread-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.570 TRACE 2930 --- [pool-1-thread-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [66]
+2023-08-22 19:19:45.570 TRACE 2930 --- [pool-1-thread-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.579 DEBUG 2930 --- [pool-1-thread-3] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.580 TRACE 2930 --- [pool-1-thread-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.586 DEBUG 2930 --- [pool-1-thread-3] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.587 TRACE 2930 --- [pool-1-thread-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.589 DEBUG 2930 --- [pool-1-thread-3] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.589 TRACE 2930 --- [pool-1-thread-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.589 TRACE 2930 --- [pool-1-thread-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [65]
+2023-08-22 19:19:45.589 TRACE 2930 --- [pool-1-thread-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.598 DEBUG 2930 --- [pool-1-thread-4] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.598 TRACE 2930 --- [pool-1-thread-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.603 DEBUG 2930 --- [pool-1-thread-4] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.604 TRACE 2930 --- [pool-1-thread-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.606 DEBUG 2930 --- [pool-1-thread-4] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.606 TRACE 2930 --- [pool-1-thread-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.606 TRACE 2930 --- [pool-1-thread-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [64]
+2023-08-22 19:19:45.606 TRACE 2930 --- [pool-1-thread-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.614 DEBUG 2930 --- [pool-1-thread-5] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.614 TRACE 2930 --- [pool-1-thread-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.620 DEBUG 2930 --- [pool-1-thread-5] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.621 TRACE 2930 --- [pool-1-thread-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.622 DEBUG 2930 --- [pool-1-thread-5] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.623 TRACE 2930 --- [pool-1-thread-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.623 TRACE 2930 --- [pool-1-thread-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [63]
+2023-08-22 19:19:45.623 TRACE 2930 --- [pool-1-thread-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.630 DEBUG 2930 --- [pool-1-thread-6] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.631 TRACE 2930 --- [pool-1-thread-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.636 DEBUG 2930 --- [pool-1-thread-6] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.637 TRACE 2930 --- [pool-1-thread-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.638 DEBUG 2930 --- [pool-1-thread-6] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.639 TRACE 2930 --- [pool-1-thread-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.639 TRACE 2930 --- [pool-1-thread-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [62]
+2023-08-22 19:19:45.639 TRACE 2930 --- [pool-1-thread-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.647 DEBUG 2930 --- [pool-1-thread-7] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.647 TRACE 2930 --- [pool-1-thread-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.653 DEBUG 2930 --- [pool-1-thread-7] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.653 TRACE 2930 --- [pool-1-thread-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.655 DEBUG 2930 --- [pool-1-thread-7] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.655 TRACE 2930 --- [pool-1-thread-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.655 TRACE 2930 --- [pool-1-thread-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [61]
+2023-08-22 19:19:45.655 TRACE 2930 --- [pool-1-thread-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.662 DEBUG 2930 --- [pool-1-thread-8] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.663 TRACE 2930 --- [pool-1-thread-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.668 DEBUG 2930 --- [pool-1-thread-8] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.668 TRACE 2930 --- [pool-1-thread-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.670 DEBUG 2930 --- [pool-1-thread-8] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.670 TRACE 2930 --- [pool-1-thread-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.670 TRACE 2930 --- [pool-1-thread-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [60]
+2023-08-22 19:19:45.670 TRACE 2930 --- [pool-1-thread-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.677 DEBUG 2930 --- [pool-1-thread-9] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.677 TRACE 2930 --- [pool-1-thread-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.682 DEBUG 2930 --- [pool-1-thread-9] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.683 TRACE 2930 --- [pool-1-thread-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.684 DEBUG 2930 --- [pool-1-thread-9] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.684 TRACE 2930 --- [pool-1-thread-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.685 TRACE 2930 --- [pool-1-thread-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [59]
+2023-08-22 19:19:45.685 TRACE 2930 --- [pool-1-thread-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.691 DEBUG 2930 --- [ool-1-thread-10] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.692 TRACE 2930 --- [ool-1-thread-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.697 DEBUG 2930 --- [ool-1-thread-10] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.697 TRACE 2930 --- [ool-1-thread-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.699 DEBUG 2930 --- [ool-1-thread-10] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.699 TRACE 2930 --- [ool-1-thread-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.699 TRACE 2930 --- [ool-1-thread-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [58]
+2023-08-22 19:19:45.699 TRACE 2930 --- [ool-1-thread-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.706 DEBUG 2930 --- [ool-1-thread-11] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.707 TRACE 2930 --- [ool-1-thread-11] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.712 DEBUG 2930 --- [ool-1-thread-11] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.713 TRACE 2930 --- [ool-1-thread-11] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.714 DEBUG 2930 --- [ool-1-thread-11] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.715 TRACE 2930 --- [ool-1-thread-11] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.715 TRACE 2930 --- [ool-1-thread-11] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [57]
+2023-08-22 19:19:45.715 TRACE 2930 --- [ool-1-thread-11] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.745 DEBUG 2930 --- [ool-1-thread-12] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.745 TRACE 2930 --- [ool-1-thread-12] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.751 DEBUG 2930 --- [ool-1-thread-12] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.751 TRACE 2930 --- [ool-1-thread-12] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.753 DEBUG 2930 --- [ool-1-thread-12] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.753 TRACE 2930 --- [ool-1-thread-12] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.753 TRACE 2930 --- [ool-1-thread-12] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [56]
+2023-08-22 19:19:45.753 TRACE 2930 --- [ool-1-thread-12] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.791 DEBUG 2930 --- [ool-1-thread-13] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.791 TRACE 2930 --- [ool-1-thread-13] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.800 DEBUG 2930 --- [ool-1-thread-13] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.801 TRACE 2930 --- [ool-1-thread-13] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.803 DEBUG 2930 --- [ool-1-thread-13] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.803 TRACE 2930 --- [ool-1-thread-13] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.803 TRACE 2930 --- [ool-1-thread-13] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [55]
+2023-08-22 19:19:45.803 TRACE 2930 --- [ool-1-thread-13] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.812 DEBUG 2930 --- [ool-1-thread-14] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.813 TRACE 2930 --- [ool-1-thread-14] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.819 DEBUG 2930 --- [ool-1-thread-14] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.819 TRACE 2930 --- [ool-1-thread-14] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.821 DEBUG 2930 --- [ool-1-thread-14] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.821 TRACE 2930 --- [ool-1-thread-14] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.821 TRACE 2930 --- [ool-1-thread-14] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [54]
+2023-08-22 19:19:45.821 TRACE 2930 --- [ool-1-thread-14] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.831 DEBUG 2930 --- [ool-1-thread-15] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.832 TRACE 2930 --- [ool-1-thread-15] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.839 DEBUG 2930 --- [ool-1-thread-15] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.839 TRACE 2930 --- [ool-1-thread-15] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.841 DEBUG 2930 --- [ool-1-thread-15] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.841 TRACE 2930 --- [ool-1-thread-15] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.842 TRACE 2930 --- [ool-1-thread-15] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [53]
+2023-08-22 19:19:45.842 TRACE 2930 --- [ool-1-thread-15] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.850 DEBUG 2930 --- [ool-1-thread-16] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.850 TRACE 2930 --- [ool-1-thread-16] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.856 DEBUG 2930 --- [ool-1-thread-16] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.857 TRACE 2930 --- [ool-1-thread-16] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.858 DEBUG 2930 --- [ool-1-thread-16] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.859 TRACE 2930 --- [ool-1-thread-16] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.859 TRACE 2930 --- [ool-1-thread-16] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [52]
+2023-08-22 19:19:45.859 TRACE 2930 --- [ool-1-thread-16] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.867 DEBUG 2930 --- [ool-1-thread-17] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.867 TRACE 2930 --- [ool-1-thread-17] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.872 DEBUG 2930 --- [ool-1-thread-17] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.872 TRACE 2930 --- [ool-1-thread-17] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.874 DEBUG 2930 --- [ool-1-thread-17] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.874 TRACE 2930 --- [ool-1-thread-17] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.874 TRACE 2930 --- [ool-1-thread-17] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [51]
+2023-08-22 19:19:45.874 TRACE 2930 --- [ool-1-thread-17] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.882 DEBUG 2930 --- [ool-1-thread-18] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.882 TRACE 2930 --- [ool-1-thread-18] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.887 DEBUG 2930 --- [ool-1-thread-18] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.887 TRACE 2930 --- [ool-1-thread-18] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.889 DEBUG 2930 --- [ool-1-thread-18] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.889 TRACE 2930 --- [ool-1-thread-18] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.889 TRACE 2930 --- [ool-1-thread-18] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [50]
+2023-08-22 19:19:45.889 TRACE 2930 --- [ool-1-thread-18] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.897 DEBUG 2930 --- [ool-1-thread-19] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.897 TRACE 2930 --- [ool-1-thread-19] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.903 DEBUG 2930 --- [ool-1-thread-19] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.903 TRACE 2930 --- [ool-1-thread-19] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.904 DEBUG 2930 --- [ool-1-thread-19] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.905 TRACE 2930 --- [ool-1-thread-19] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.905 TRACE 2930 --- [ool-1-thread-19] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [49]
+2023-08-22 19:19:45.905 TRACE 2930 --- [ool-1-thread-19] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.912 DEBUG 2930 --- [ool-1-thread-20] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.913 TRACE 2930 --- [ool-1-thread-20] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.917 DEBUG 2930 --- [ool-1-thread-20] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.918 TRACE 2930 --- [ool-1-thread-20] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.919 DEBUG 2930 --- [ool-1-thread-20] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.919 TRACE 2930 --- [ool-1-thread-20] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.919 TRACE 2930 --- [ool-1-thread-20] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [48]
+2023-08-22 19:19:45.920 TRACE 2930 --- [ool-1-thread-20] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.928 DEBUG 2930 --- [ool-1-thread-21] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.929 TRACE 2930 --- [ool-1-thread-21] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.934 DEBUG 2930 --- [ool-1-thread-21] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.934 TRACE 2930 --- [ool-1-thread-21] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.935 DEBUG 2930 --- [ool-1-thread-21] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.936 TRACE 2930 --- [ool-1-thread-21] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.936 TRACE 2930 --- [ool-1-thread-21] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [47]
+2023-08-22 19:19:45.936 TRACE 2930 --- [ool-1-thread-21] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.943 DEBUG 2930 --- [ool-1-thread-22] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.943 TRACE 2930 --- [ool-1-thread-22] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.949 DEBUG 2930 --- [ool-1-thread-22] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.949 TRACE 2930 --- [ool-1-thread-22] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.951 DEBUG 2930 --- [ool-1-thread-22] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.951 TRACE 2930 --- [ool-1-thread-22] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.951 TRACE 2930 --- [ool-1-thread-22] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [46]
+2023-08-22 19:19:45.951 TRACE 2930 --- [ool-1-thread-22] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.958 DEBUG 2930 --- [ool-1-thread-23] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.959 TRACE 2930 --- [ool-1-thread-23] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.965 DEBUG 2930 --- [ool-1-thread-23] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.965 TRACE 2930 --- [ool-1-thread-23] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.966 DEBUG 2930 --- [ool-1-thread-23] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.967 TRACE 2930 --- [ool-1-thread-23] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.967 TRACE 2930 --- [ool-1-thread-23] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [45]
+2023-08-22 19:19:45.967 TRACE 2930 --- [ool-1-thread-23] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.975 DEBUG 2930 --- [ool-1-thread-24] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.975 TRACE 2930 --- [ool-1-thread-24] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.980 DEBUG 2930 --- [ool-1-thread-24] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.981 TRACE 2930 --- [ool-1-thread-24] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.983 DEBUG 2930 --- [ool-1-thread-24] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:45.983 TRACE 2930 --- [ool-1-thread-24] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:45.983 TRACE 2930 --- [ool-1-thread-24] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [44]
+2023-08-22 19:19:45.983 TRACE 2930 --- [ool-1-thread-24] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:45.994 DEBUG 2930 --- [ool-1-thread-25] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:45.994 TRACE 2930 --- [ool-1-thread-25] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.000 DEBUG 2930 --- [ool-1-thread-25] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.001 TRACE 2930 --- [ool-1-thread-25] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.002 DEBUG 2930 --- [ool-1-thread-25] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.002 TRACE 2930 --- [ool-1-thread-25] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.002 TRACE 2930 --- [ool-1-thread-25] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [43]
+2023-08-22 19:19:46.002 TRACE 2930 --- [ool-1-thread-25] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.009 DEBUG 2930 --- [ool-1-thread-26] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.010 TRACE 2930 --- [ool-1-thread-26] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.015 DEBUG 2930 --- [ool-1-thread-26] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.015 TRACE 2930 --- [ool-1-thread-26] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.016 DEBUG 2930 --- [ool-1-thread-26] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.016 TRACE 2930 --- [ool-1-thread-26] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.017 TRACE 2930 --- [ool-1-thread-26] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [42]
+2023-08-22 19:19:46.017 TRACE 2930 --- [ool-1-thread-26] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.025 DEBUG 2930 --- [ool-1-thread-27] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.025 TRACE 2930 --- [ool-1-thread-27] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.031 DEBUG 2930 --- [ool-1-thread-27] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.031 TRACE 2930 --- [ool-1-thread-27] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.033 DEBUG 2930 --- [ool-1-thread-27] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.033 TRACE 2930 --- [ool-1-thread-27] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.033 TRACE 2930 --- [ool-1-thread-27] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [41]
+2023-08-22 19:19:46.033 TRACE 2930 --- [ool-1-thread-27] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.040 DEBUG 2930 --- [ool-1-thread-28] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.040 TRACE 2930 --- [ool-1-thread-28] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.046 DEBUG 2930 --- [ool-1-thread-28] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.046 TRACE 2930 --- [ool-1-thread-28] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.048 DEBUG 2930 --- [ool-1-thread-28] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.048 TRACE 2930 --- [ool-1-thread-28] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.048 TRACE 2930 --- [ool-1-thread-28] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [40]
+2023-08-22 19:19:46.048 TRACE 2930 --- [ool-1-thread-28] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.055 DEBUG 2930 --- [ool-1-thread-29] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.055 TRACE 2930 --- [ool-1-thread-29] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.060 DEBUG 2930 --- [ool-1-thread-29] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.061 TRACE 2930 --- [ool-1-thread-29] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.062 DEBUG 2930 --- [ool-1-thread-29] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.063 TRACE 2930 --- [ool-1-thread-29] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.063 TRACE 2930 --- [ool-1-thread-29] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [39]
+2023-08-22 19:19:46.063 TRACE 2930 --- [ool-1-thread-29] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.071 DEBUG 2930 --- [ool-1-thread-30] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.071 TRACE 2930 --- [ool-1-thread-30] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.076 DEBUG 2930 --- [ool-1-thread-30] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.076 TRACE 2930 --- [ool-1-thread-30] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.078 DEBUG 2930 --- [ool-1-thread-30] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.078 TRACE 2930 --- [ool-1-thread-30] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.078 TRACE 2930 --- [ool-1-thread-30] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [38]
+2023-08-22 19:19:46.078 TRACE 2930 --- [ool-1-thread-30] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.086 DEBUG 2930 --- [ool-1-thread-31] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.086 TRACE 2930 --- [ool-1-thread-31] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.091 DEBUG 2930 --- [ool-1-thread-31] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.091 TRACE 2930 --- [ool-1-thread-31] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.092 DEBUG 2930 --- [ool-1-thread-31] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.092 TRACE 2930 --- [ool-1-thread-31] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.093 TRACE 2930 --- [ool-1-thread-31] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [37]
+2023-08-22 19:19:46.093 TRACE 2930 --- [ool-1-thread-31] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.100 DEBUG 2930 --- [ool-1-thread-32] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.100 TRACE 2930 --- [ool-1-thread-32] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.105 DEBUG 2930 --- [ool-1-thread-32] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.105 TRACE 2930 --- [ool-1-thread-32] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.106 DEBUG 2930 --- [ool-1-thread-32] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.107 TRACE 2930 --- [ool-1-thread-32] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.107 TRACE 2930 --- [ool-1-thread-32] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [36]
+2023-08-22 19:19:46.107 TRACE 2930 --- [ool-1-thread-32] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.114 DEBUG 2930 --- [pool-1-thread-1] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.114 TRACE 2930 --- [pool-1-thread-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.119 DEBUG 2930 --- [pool-1-thread-1] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.120 TRACE 2930 --- [pool-1-thread-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.121 DEBUG 2930 --- [pool-1-thread-1] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.121 TRACE 2930 --- [pool-1-thread-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.121 TRACE 2930 --- [pool-1-thread-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [35]
+2023-08-22 19:19:46.121 TRACE 2930 --- [pool-1-thread-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.128 DEBUG 2930 --- [ool-1-thread-32] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.128 TRACE 2930 --- [ool-1-thread-32] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.133 DEBUG 2930 --- [ool-1-thread-32] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.133 TRACE 2930 --- [ool-1-thread-32] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.135 DEBUG 2930 --- [ool-1-thread-32] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.135 TRACE 2930 --- [ool-1-thread-32] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.135 TRACE 2930 --- [ool-1-thread-32] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [34]
+2023-08-22 19:19:46.135 TRACE 2930 --- [ool-1-thread-32] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.142 DEBUG 2930 --- [ool-1-thread-31] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.142 TRACE 2930 --- [ool-1-thread-31] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.147 DEBUG 2930 --- [ool-1-thread-31] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.147 TRACE 2930 --- [ool-1-thread-31] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.149 DEBUG 2930 --- [ool-1-thread-31] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.149 TRACE 2930 --- [ool-1-thread-31] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.149 TRACE 2930 --- [ool-1-thread-31] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [33]
+2023-08-22 19:19:46.149 TRACE 2930 --- [ool-1-thread-31] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.156 DEBUG 2930 --- [ool-1-thread-30] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.156 TRACE 2930 --- [ool-1-thread-30] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.162 DEBUG 2930 --- [ool-1-thread-30] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.162 TRACE 2930 --- [ool-1-thread-30] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.164 DEBUG 2930 --- [ool-1-thread-30] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.164 TRACE 2930 --- [ool-1-thread-30] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.164 TRACE 2930 --- [ool-1-thread-30] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [32]
+2023-08-22 19:19:46.164 TRACE 2930 --- [ool-1-thread-30] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.173 DEBUG 2930 --- [ool-1-thread-29] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.173 TRACE 2930 --- [ool-1-thread-29] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.179 DEBUG 2930 --- [ool-1-thread-29] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.179 TRACE 2930 --- [ool-1-thread-29] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.181 DEBUG 2930 --- [ool-1-thread-29] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.181 TRACE 2930 --- [ool-1-thread-29] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.181 TRACE 2930 --- [ool-1-thread-29] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [31]
+2023-08-22 19:19:46.181 TRACE 2930 --- [ool-1-thread-29] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.191 DEBUG 2930 --- [ool-1-thread-28] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.191 TRACE 2930 --- [ool-1-thread-28] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.198 DEBUG 2930 --- [ool-1-thread-28] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.198 TRACE 2930 --- [ool-1-thread-28] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.200 DEBUG 2930 --- [ool-1-thread-28] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.200 TRACE 2930 --- [ool-1-thread-28] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.200 TRACE 2930 --- [ool-1-thread-28] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [30]
+2023-08-22 19:19:46.200 TRACE 2930 --- [ool-1-thread-28] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.280 DEBUG 2930 --- [ool-1-thread-27] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.280 TRACE 2930 --- [ool-1-thread-27] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.285 DEBUG 2930 --- [ool-1-thread-27] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.285 TRACE 2930 --- [ool-1-thread-27] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.287 DEBUG 2930 --- [ool-1-thread-27] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.287 TRACE 2930 --- [ool-1-thread-27] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.287 TRACE 2930 --- [ool-1-thread-27] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [29]
+2023-08-22 19:19:46.287 TRACE 2930 --- [ool-1-thread-27] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.317 DEBUG 2930 --- [ool-1-thread-26] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.317 TRACE 2930 --- [ool-1-thread-26] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.322 DEBUG 2930 --- [ool-1-thread-26] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.323 TRACE 2930 --- [ool-1-thread-26] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.324 DEBUG 2930 --- [ool-1-thread-26] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.324 TRACE 2930 --- [ool-1-thread-26] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.324 TRACE 2930 --- [ool-1-thread-26] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [28]
+2023-08-22 19:19:46.324 TRACE 2930 --- [ool-1-thread-26] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.331 DEBUG 2930 --- [ool-1-thread-25] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.331 TRACE 2930 --- [ool-1-thread-25] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.336 DEBUG 2930 --- [ool-1-thread-25] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.336 TRACE 2930 --- [ool-1-thread-25] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.338 DEBUG 2930 --- [ool-1-thread-25] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.338 TRACE 2930 --- [ool-1-thread-25] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.338 TRACE 2930 --- [ool-1-thread-25] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [27]
+2023-08-22 19:19:46.338 TRACE 2930 --- [ool-1-thread-25] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.345 DEBUG 2930 --- [ool-1-thread-24] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.345 TRACE 2930 --- [ool-1-thread-24] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.350 DEBUG 2930 --- [ool-1-thread-24] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.350 TRACE 2930 --- [ool-1-thread-24] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.351 DEBUG 2930 --- [ool-1-thread-24] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.352 TRACE 2930 --- [ool-1-thread-24] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.352 TRACE 2930 --- [ool-1-thread-24] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [26]
+2023-08-22 19:19:46.352 TRACE 2930 --- [ool-1-thread-24] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.358 DEBUG 2930 --- [ool-1-thread-23] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.358 TRACE 2930 --- [ool-1-thread-23] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.363 DEBUG 2930 --- [ool-1-thread-23] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.363 TRACE 2930 --- [ool-1-thread-23] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.365 DEBUG 2930 --- [ool-1-thread-23] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.365 TRACE 2930 --- [ool-1-thread-23] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.365 TRACE 2930 --- [ool-1-thread-23] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [25]
+2023-08-22 19:19:46.365 TRACE 2930 --- [ool-1-thread-23] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.372 DEBUG 2930 --- [ool-1-thread-22] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.372 TRACE 2930 --- [ool-1-thread-22] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.378 DEBUG 2930 --- [ool-1-thread-22] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.378 TRACE 2930 --- [ool-1-thread-22] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.379 DEBUG 2930 --- [ool-1-thread-22] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.379 TRACE 2930 --- [ool-1-thread-22] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.379 TRACE 2930 --- [ool-1-thread-22] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [24]
+2023-08-22 19:19:46.379 TRACE 2930 --- [ool-1-thread-22] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.387 DEBUG 2930 --- [ool-1-thread-21] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.387 TRACE 2930 --- [ool-1-thread-21] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.392 DEBUG 2930 --- [ool-1-thread-21] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.392 TRACE 2930 --- [ool-1-thread-21] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.394 DEBUG 2930 --- [ool-1-thread-21] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.394 TRACE 2930 --- [ool-1-thread-21] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.394 TRACE 2930 --- [ool-1-thread-21] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [23]
+2023-08-22 19:19:46.394 TRACE 2930 --- [ool-1-thread-21] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.402 DEBUG 2930 --- [ool-1-thread-20] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.402 TRACE 2930 --- [ool-1-thread-20] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.408 DEBUG 2930 --- [ool-1-thread-20] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.408 TRACE 2930 --- [ool-1-thread-20] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.410 DEBUG 2930 --- [ool-1-thread-20] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.410 TRACE 2930 --- [ool-1-thread-20] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.410 TRACE 2930 --- [ool-1-thread-20] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [22]
+2023-08-22 19:19:46.410 TRACE 2930 --- [ool-1-thread-20] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.417 DEBUG 2930 --- [ool-1-thread-19] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.417 TRACE 2930 --- [ool-1-thread-19] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.422 DEBUG 2930 --- [ool-1-thread-19] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.423 TRACE 2930 --- [ool-1-thread-19] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.424 DEBUG 2930 --- [ool-1-thread-19] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.424 TRACE 2930 --- [ool-1-thread-19] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.424 TRACE 2930 --- [ool-1-thread-19] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [21]
+2023-08-22 19:19:46.424 TRACE 2930 --- [ool-1-thread-19] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.432 DEBUG 2930 --- [ool-1-thread-18] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.433 TRACE 2930 --- [ool-1-thread-18] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.437 DEBUG 2930 --- [ool-1-thread-18] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.438 TRACE 2930 --- [ool-1-thread-18] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.439 DEBUG 2930 --- [ool-1-thread-18] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.439 TRACE 2930 --- [ool-1-thread-18] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.439 TRACE 2930 --- [ool-1-thread-18] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [20]
+2023-08-22 19:19:46.439 TRACE 2930 --- [ool-1-thread-18] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.446 DEBUG 2930 --- [ool-1-thread-17] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.446 TRACE 2930 --- [ool-1-thread-17] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.452 DEBUG 2930 --- [ool-1-thread-17] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.452 TRACE 2930 --- [ool-1-thread-17] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.453 DEBUG 2930 --- [ool-1-thread-17] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.454 TRACE 2930 --- [ool-1-thread-17] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.454 TRACE 2930 --- [ool-1-thread-17] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [19]
+2023-08-22 19:19:46.454 TRACE 2930 --- [ool-1-thread-17] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.461 DEBUG 2930 --- [ool-1-thread-16] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.462 TRACE 2930 --- [ool-1-thread-16] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.467 DEBUG 2930 --- [ool-1-thread-16] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.467 TRACE 2930 --- [ool-1-thread-16] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.468 DEBUG 2930 --- [ool-1-thread-16] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.469 TRACE 2930 --- [ool-1-thread-16] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.469 TRACE 2930 --- [ool-1-thread-16] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [18]
+2023-08-22 19:19:46.469 TRACE 2930 --- [ool-1-thread-16] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.476 DEBUG 2930 --- [ool-1-thread-15] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.476 TRACE 2930 --- [ool-1-thread-15] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.480 DEBUG 2930 --- [ool-1-thread-15] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.480 TRACE 2930 --- [ool-1-thread-15] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.482 DEBUG 2930 --- [ool-1-thread-15] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.482 TRACE 2930 --- [ool-1-thread-15] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.482 TRACE 2930 --- [ool-1-thread-15] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [17]
+2023-08-22 19:19:46.482 TRACE 2930 --- [ool-1-thread-15] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.490 DEBUG 2930 --- [ool-1-thread-14] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.490 TRACE 2930 --- [ool-1-thread-14] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.497 DEBUG 2930 --- [ool-1-thread-14] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.497 TRACE 2930 --- [ool-1-thread-14] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.498 DEBUG 2930 --- [ool-1-thread-14] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.498 TRACE 2930 --- [ool-1-thread-14] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.498 TRACE 2930 --- [ool-1-thread-14] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [16]
+2023-08-22 19:19:46.498 TRACE 2930 --- [ool-1-thread-14] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.506 DEBUG 2930 --- [ool-1-thread-13] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.506 TRACE 2930 --- [ool-1-thread-13] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.511 DEBUG 2930 --- [ool-1-thread-13] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.511 TRACE 2930 --- [ool-1-thread-13] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.513 DEBUG 2930 --- [ool-1-thread-13] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.513 TRACE 2930 --- [ool-1-thread-13] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.513 TRACE 2930 --- [ool-1-thread-13] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [15]
+2023-08-22 19:19:46.513 TRACE 2930 --- [ool-1-thread-13] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.520 DEBUG 2930 --- [ool-1-thread-12] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.520 TRACE 2930 --- [ool-1-thread-12] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.525 DEBUG 2930 --- [ool-1-thread-12] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.525 TRACE 2930 --- [ool-1-thread-12] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.526 DEBUG 2930 --- [ool-1-thread-12] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.526 TRACE 2930 --- [ool-1-thread-12] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.526 TRACE 2930 --- [ool-1-thread-12] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [14]
+2023-08-22 19:19:46.526 TRACE 2930 --- [ool-1-thread-12] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.533 DEBUG 2930 --- [ool-1-thread-11] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.533 TRACE 2930 --- [ool-1-thread-11] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.538 DEBUG 2930 --- [ool-1-thread-11] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.538 TRACE 2930 --- [ool-1-thread-11] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.540 DEBUG 2930 --- [ool-1-thread-11] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.540 TRACE 2930 --- [ool-1-thread-11] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.540 TRACE 2930 --- [ool-1-thread-11] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [13]
+2023-08-22 19:19:46.540 TRACE 2930 --- [ool-1-thread-11] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.546 DEBUG 2930 --- [ool-1-thread-10] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.547 TRACE 2930 --- [ool-1-thread-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.551 DEBUG 2930 --- [ool-1-thread-10] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.552 TRACE 2930 --- [ool-1-thread-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.553 DEBUG 2930 --- [ool-1-thread-10] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.553 TRACE 2930 --- [ool-1-thread-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.553 TRACE 2930 --- [ool-1-thread-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [12]
+2023-08-22 19:19:46.553 TRACE 2930 --- [ool-1-thread-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.560 DEBUG 2930 --- [pool-1-thread-9] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.560 TRACE 2930 --- [pool-1-thread-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.565 DEBUG 2930 --- [pool-1-thread-9] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.565 TRACE 2930 --- [pool-1-thread-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.567 DEBUG 2930 --- [pool-1-thread-9] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.567 TRACE 2930 --- [pool-1-thread-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.567 TRACE 2930 --- [pool-1-thread-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [11]
+2023-08-22 19:19:46.567 TRACE 2930 --- [pool-1-thread-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.574 DEBUG 2930 --- [pool-1-thread-8] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.574 TRACE 2930 --- [pool-1-thread-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.580 DEBUG 2930 --- [pool-1-thread-8] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.580 TRACE 2930 --- [pool-1-thread-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.581 DEBUG 2930 --- [pool-1-thread-8] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.581 TRACE 2930 --- [pool-1-thread-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.581 TRACE 2930 --- [pool-1-thread-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [10]
+2023-08-22 19:19:46.582 TRACE 2930 --- [pool-1-thread-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.589 DEBUG 2930 --- [pool-1-thread-7] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.589 TRACE 2930 --- [pool-1-thread-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.594 DEBUG 2930 --- [pool-1-thread-7] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.595 TRACE 2930 --- [pool-1-thread-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.596 DEBUG 2930 --- [pool-1-thread-7] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.596 TRACE 2930 --- [pool-1-thread-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.596 TRACE 2930 --- [pool-1-thread-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [9]
+2023-08-22 19:19:46.596 TRACE 2930 --- [pool-1-thread-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.604 DEBUG 2930 --- [pool-1-thread-6] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.604 TRACE 2930 --- [pool-1-thread-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.609 DEBUG 2930 --- [pool-1-thread-6] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.609 TRACE 2930 --- [pool-1-thread-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.611 DEBUG 2930 --- [pool-1-thread-6] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.611 TRACE 2930 --- [pool-1-thread-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.611 TRACE 2930 --- [pool-1-thread-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [8]
+2023-08-22 19:19:46.611 TRACE 2930 --- [pool-1-thread-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.618 DEBUG 2930 --- [pool-1-thread-5] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.619 TRACE 2930 --- [pool-1-thread-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.624 DEBUG 2930 --- [pool-1-thread-5] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.625 TRACE 2930 --- [pool-1-thread-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.626 DEBUG 2930 --- [pool-1-thread-5] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.626 TRACE 2930 --- [pool-1-thread-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.626 TRACE 2930 --- [pool-1-thread-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [7]
+2023-08-22 19:19:46.626 TRACE 2930 --- [pool-1-thread-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.634 DEBUG 2930 --- [pool-1-thread-4] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.634 TRACE 2930 --- [pool-1-thread-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.639 DEBUG 2930 --- [pool-1-thread-4] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.639 TRACE 2930 --- [pool-1-thread-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.641 DEBUG 2930 --- [pool-1-thread-4] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.641 TRACE 2930 --- [pool-1-thread-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.641 TRACE 2930 --- [pool-1-thread-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [6]
+2023-08-22 19:19:46.641 TRACE 2930 --- [pool-1-thread-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.648 DEBUG 2930 --- [pool-1-thread-3] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.649 TRACE 2930 --- [pool-1-thread-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.654 DEBUG 2930 --- [pool-1-thread-3] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.654 TRACE 2930 --- [pool-1-thread-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.656 DEBUG 2930 --- [pool-1-thread-3] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.656 TRACE 2930 --- [pool-1-thread-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.656 TRACE 2930 --- [pool-1-thread-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [5]
+2023-08-22 19:19:46.656 TRACE 2930 --- [pool-1-thread-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.664 DEBUG 2930 --- [pool-1-thread-2] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.664 TRACE 2930 --- [pool-1-thread-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.670 DEBUG 2930 --- [pool-1-thread-2] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.670 TRACE 2930 --- [pool-1-thread-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.671 DEBUG 2930 --- [pool-1-thread-2] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.671 TRACE 2930 --- [pool-1-thread-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.671 TRACE 2930 --- [pool-1-thread-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [4]
+2023-08-22 19:19:46.672 TRACE 2930 --- [pool-1-thread-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.679 DEBUG 2930 --- [ool-1-thread-30] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.679 TRACE 2930 --- [ool-1-thread-30] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.685 DEBUG 2930 --- [ool-1-thread-30] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.685 TRACE 2930 --- [ool-1-thread-30] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.686 DEBUG 2930 --- [ool-1-thread-30] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.686 TRACE 2930 --- [ool-1-thread-30] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.686 TRACE 2930 --- [ool-1-thread-30] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [3]
+2023-08-22 19:19:46.686 TRACE 2930 --- [ool-1-thread-30] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.693 DEBUG 2930 --- [ool-1-thread-31] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.694 TRACE 2930 --- [ool-1-thread-31] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.699 DEBUG 2930 --- [ool-1-thread-31] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.699 TRACE 2930 --- [ool-1-thread-31] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.700 DEBUG 2930 --- [ool-1-thread-31] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.701 TRACE 2930 --- [ool-1-thread-31] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.701 TRACE 2930 --- [ool-1-thread-31] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [2]
+2023-08-22 19:19:46.701 TRACE 2930 --- [ool-1-thread-31] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.708 DEBUG 2930 --- [ool-1-thread-32] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.709 TRACE 2930 --- [ool-1-thread-32] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.714 DEBUG 2930 --- [ool-1-thread-32] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.714 TRACE 2930 --- [ool-1-thread-32] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.715 DEBUG 2930 --- [ool-1-thread-32] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.715 TRACE 2930 --- [ool-1-thread-32] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.715 TRACE 2930 --- [ool-1-thread-32] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [1]
+2023-08-22 19:19:46.715 TRACE 2930 --- [ool-1-thread-32] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.722 DEBUG 2930 --- [pool-1-thread-1] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.722 TRACE 2930 --- [pool-1-thread-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.727 DEBUG 2930 --- [pool-1-thread-1] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.727 TRACE 2930 --- [pool-1-thread-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.729 DEBUG 2930 --- [pool-1-thread-1] org.hibernate.SQL                        : update stock set produce_id=?, quantity=? where id=?
+Hibernate: update stock set produce_id=?, quantity=? where id=?
+2023-08-22 19:19:46.729 TRACE 2930 --- [pool-1-thread-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.729 TRACE 2930 --- [pool-1-thread-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [0]
+2023-08-22 19:19:46.729 TRACE 2930 --- [pool-1-thread-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2023-08-22 19:19:46.735 DEBUG 2930 --- [    Test worker] org.hibernate.SQL                        : select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+Hibernate: select stock0_.id as id1_0_0_, stock0_.produce_id as produce_2_0_0_, stock0_.quantity as quantity3_0_0_ from stock stock0_ where stock0_.id=?
+2023-08-22 19:19:46.736 TRACE 2930 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.847 DEBUG 2930 --- [    Test worker] org.hibernate.SQL                        : select stock0_.id as id1_0_, stock0_.produce_id as produce_2_0_, stock0_.quantity as quantity3_0_ from stock stock0_
 Hibernate: select stock0_.id as id1_0_, stock0_.produce_id as produce_2_0_, stock0_.quantity as quantity3_0_ from stock stock0_
-2023-08-16 21:32:23.840 DEBUG 17837 --- [    Test worker] org.hibernate.SQL                        : delete from stock where id=?
+2023-08-22 19:19:46.853 DEBUG 2930 --- [    Test worker] org.hibernate.SQL                        : delete from stock where id=?
 Hibernate: delete from stock where id=?
-2023-08-16 21:32:23.840 TRACE 17837 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2023-08-22 19:19:46.853 TRACE 2930 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
 </pre>
 </span>
 </div>
@@ -160,7 +1252,7 @@ Hibernate: delete from stock where id=?
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.2.1</a> at 2023. 8. 16. 오후 9:32:23</p>
+<a href="http://www.gradle.org">Gradle 8.2.1</a> at 2023. 8. 22. 오후 7:19:46</p>
 </div>
 </div>
 </body>

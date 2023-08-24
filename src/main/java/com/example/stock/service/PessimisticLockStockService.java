@@ -4,6 +4,8 @@ import com.example.stock.domain.Stock;
 import com.example.stock.repository.StockRepository;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
+
 @Service
 public class PessimisticLockStockService {
 
@@ -13,6 +15,7 @@ public class PessimisticLockStockService {
         this.stockRepository = stockRepository;
     }
 
+    @Transactional
     public void decrease(Long id, Long quantity){
         //Lock을 활용해서 데이터를 가져옴
         Stock stock = stockRepository.findByIdWithPessimisticLock(id);

@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d43bba6-e626-49cd-b2bf-72cb382ec4d3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/stock/service/PessimisticLockStockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/stock/service/PessimisticLockStockService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/stock/service/StockServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/stock/service/StockServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/stock/domain/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/stock/domain/Stock.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

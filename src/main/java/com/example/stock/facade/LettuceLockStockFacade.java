@@ -7,23 +7,24 @@ import org.springframework.stereotype.Component;
 @Component
 public class LettuceLockStockFacade {
 
-    private final RedisLockRepository redisLockRepository;
-    private final StockService stockService;
+    private RedisLockRepository redisLockRepository;
+
+    private StockService stockService;
 
     public LettuceLockStockFacade(RedisLockRepository redisLockRepository, StockService stockService) {
         this.redisLockRepository = redisLockRepository;
         this.stockService = stockService;
     }
 
-    public void decrease(Long id, Long quantity) throws InterruptedException {
-        while (!redisLockRepository.lock(id)){
+    public void decrease(Long key, Long quantity) throws InterruptedException {
+        while (!redisLockRepository.lock(key)) {
             Thread.sleep(100);  //lock 획득 시도 실패 시
         }
 
         try {
-            stockService.decrease(id, quantity);  //lock 획득 성공 시
-        }finally {
-            redisLockRepository.unlock(id);
+            stockService.decrease(key, quantity);  //lock 획득 성공 시
+        } finally {
+            redisLockRepository.unlock(key);
         }
     }
 }

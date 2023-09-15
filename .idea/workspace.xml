@@ -36,8 +36,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -78,7 +78,7 @@
       <recent name="com.example.stock.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.LettuceLockStockFacadeTest.동시에_100개의요청">
+  <component name="RunManager" selected="Gradle.RedissonLockStockFacadeTest.동시에_100개의요청">
     <configuration name="StockApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.stock.StockApplication" />
       <module name="stock.main" />
@@ -164,7 +164,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="NamedLockStockFacadeTest.동시에_100개의_요청" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RedissonLockStockFacadeTest.동시에_100개의요청" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -177,7 +177,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.example.stock.facade.NamedLockStockFacadeTest.동시에_100개의_요청&quot;" />
+            <option value="&quot;com.example.stock.facade.RedissonLockStockFacadeTest.동시에_100개의요청&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -190,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RedissonLockStockFacadeTest.동시에_100개의요청" />
         <item itemvalue="Gradle.LettuceLockStockFacadeTest.동시에_100개의요청" />
         <item itemvalue="Gradle.LettuceLockStockFacadeTest" />
         <item itemvalue="Gradle.LettuceLockStockFacadeTest.동시에_100개의_요청" />
         <item itemvalue="애플리케이션.StockApplication" />
-        <item itemvalue="Gradle.NamedLockStockFacadeTest.동시에_100개의_요청" />
       </list>
     </recent_temporary>
   </component>
